@@ -1,6 +1,8 @@
 # PythonLogicTableGenerator
 A logic table generator written for Python 3.x
 
+![demo](./demo.png)
+
 ## Instructions for use:
 1. Have python3 on your system
 2. Download logic.py file
