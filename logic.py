@@ -32,8 +32,6 @@ def err(msg):
 def ascii_table(header, data):
     ''' Draws ascii table for data provided as 2D
     array of rows. '''
-    
-    print(data[0])
 
     # calculates independent column widths
     ncols = len(data[0])
