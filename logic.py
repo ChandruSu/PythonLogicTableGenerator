@@ -123,7 +123,7 @@ def gen_logic_table(propvars, funcs):
         for s in statements:                                                                                                                                                          
             try:                                                                                                                                                                      
                 o.append(int(eval(s.format(**v_dict))))                                                                                                                               
-            except SyntaxError, NameError:                                                                                                                                                       
+            except (SyntaxError, NameError) as e:                                                                                                                                                       
                 err("Could not parse statement: " + s)                                                                                                                                
         
         logic_table_data.append((*v, *o))                                                                                                                                             
